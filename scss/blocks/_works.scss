@@ -1,0 +1,54 @@
+.works {
+
+    padding-block: 150px;
+
+    &__title {
+        font-size: 30px;
+        margin-bottom: 80px;
+        font-family: $fontH1;
+        color: $color-2;
+
+        @media (max-width: $laptop){
+            text-align: center;
+        }
+    }
+
+    &__gallery {
+
+        @media(max-width: $laptop){
+            grid-template-areas: 
+            "img1 img3"
+            "img2 img2"
+            "img4 img5"
+            "img6 img6"
+            "img7 img7"
+            "img8 img9"
+        ;
+        justify-content: center;
+        }
+
+        display: grid;
+        grid-template-areas: 
+            "img1 img2 img2 img3"
+            "img4 img5 img6 img6"
+            "img7 img7 img8 img9"
+        ;
+        gap: 20px;
+    }
+}
+
+.img1{grid-area: img1}
+.img2{grid-area: img2}
+.img3{grid-area: img3}
+.img4{grid-area: img4}
+.img5{grid-area: img5}
+.img6{grid-area: img6}
+.img7{grid-area: img7}
+.img8{grid-area: img8}
+.img9{grid-area: img9}
+
+.box{
+    position: relative;
+}
+
+

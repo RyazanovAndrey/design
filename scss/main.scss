@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import './reset';
+@import './vars';
+@import './blocks/popup';
+@import './blocks/header';
+@import './blocks/home';
+@import './blocks/works';
+@import './blocks/about';
+@import './blocks/services';
+@import './blocks/contacts';
+@import './blocks/footer';
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Manrope';
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+.btn{
+    display: inline-block;
+    padding: 13px 50px;
+    background-color: $color-3;
+    color: #fff;
+    font-size: 20px;
+}
+
+.btn-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+
+.btn-top.show{
+    opacity: 1;
+    visibility: visible;
+}
+
+.bxs-chevron-up{
+    font-size: 50px;
+}
+
+.burger {
+
+    @media(max-width:$laptop){
+        display: block;
+    }
+
+    cursor: pointer;
+    font-size: 40px;
+    display: none;
+    z-index: 99;
+    transition: .3s;
+}
+
+.hidden {
+    display: none;
+}

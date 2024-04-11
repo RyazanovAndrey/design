@@ -1,0 +1,75 @@
+.services {
+
+    padding-block: 150px;
+
+    &__title {
+        font-size: 30px;
+        font-family: $fontH1;
+        margin-bottom: 80px;
+    }
+
+    &__wrapper {
+
+        @media (max-width: $desktop) {
+            gap: 30px;
+        }
+
+        @media (max-width: $laptop) {
+            flex-direction: column;
+        }
+
+        display: flex;
+        gap: 195px;
+    }
+
+    &__left {
+
+        @media (max-width: $laptop) {
+            max-width: 100%;
+        }
+
+        max-width: 500px;
+        display: flex;
+    }
+
+    &__head{
+        cursor: pointer;
+        font-size: 20px;
+        padding: 20px 15px;
+        border-bottom: 1px solid #CCCCCC;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__text{
+        max-height: 0;
+        overflow: hidden;
+        transition: .3s;
+    }
+
+    &__text p {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    &__right {
+
+        @media (max-width: $laptop) {
+            width: 100%;
+            height: 100%;
+        }
+
+        width: 480px;
+        height: 480px;
+    }
+
+    .bx{
+        font-size: 30px;
+        transition: .3s;
+    }
+}
+
+.services__block.open .bx{
+    rotate: 45deg;
+}

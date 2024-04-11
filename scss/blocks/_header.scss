@@ -1,0 +1,64 @@
+.header {
+
+    padding: 20px 0;
+    font-size: 18px;
+    position: fixed;
+    width: 100%;
+    z-index: 88;
+    background-color: $color-1;
+    transition: .2s;
+    font-size: 16px;
+
+    &__tel {
+        font-weight: 600;
+        font-size: 18px;
+    }
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu {
+
+    @media(max-width:$laptop){
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: -100%;
+        background-color: #fff;
+        z-index: 80;
+        flex-direction: column;
+        row-gap: 40px;
+        font-size: 20px;
+        padding: 100px;
+        transition: .3s;
+    }
+
+    display: flex;
+    column-gap: 60px;
+
+    &.open{
+        left: 0;
+    }
+
+    &.open ~ .burger {
+        rotate: 45deg;
+    }
+
+    &__link {
+
+        transition: .3s;
+        color: #cdced1;
+
+        &:hover{
+            color: #0f0f0f;
+        }
+    }
+}
+
+.menu__link.act-link{
+    color: #0f0f0f;
+}

@@ -1,0 +1,33 @@
+$color-1: #E6E7EB;
+$color-2: #574E56;
+$color-3: #151414;
+
+$fontH1: 'Playfair Display';
+
+$desktop: 1180px;
+$laptop: 992px;
+$tablet: 768px;
+$mobile: 480px;
+
+.container{
+
+    @media(max-width: $desktop){
+        max-width: $laptop;
+    }
+
+    @media(max-width: $laptop){
+        max-width: $tablet;
+    }
+
+    @media(max-width: $tablet){
+        max-width: $mobile;
+    }
+
+    max-width: calc($desktop + 10px * 2);
+    padding: 0 10px;
+    margin: auto;
+}
+
+.hedden{
+    display: none;
+}
