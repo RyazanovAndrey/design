@@ -35,6 +35,10 @@
             column-gap: 50px;
         }
 
+        @media(max-width: 768px) {
+            flex-direction: column;
+        }
+
         display: flex;
         column-gap: 155px;
     }
