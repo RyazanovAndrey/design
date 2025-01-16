@@ -1,3 +1,11 @@
+const menuLink = document.querySelectorAll('.menu__link')
+
+menuLink.forEach(link => {
+  link.addEventListener('click', () => {
+    document.querySelector('.menu.open').classList.remove('open')
+  })
+})
+
 window.addEventListener('scroll', () => {
   const scrollAct = window.scrollY
 
